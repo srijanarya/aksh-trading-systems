@@ -6,7 +6,7 @@
 
 ## What is AKSH?
 
-AKSH is a **423,000-line production trading platform** built solo, handling live algorithmic trading on the NSE (National Stock Exchange of India). It is the core infrastructure of [Treum AlgoTech](https://treumalgotech.in).
+AKSH is a **400,000+ line production trading platform** built solo, handling live algorithmic trading on the NSE (National Stock Exchange of India). It is the core infrastructure of [Treum AlgoTech](https://treumalgotech.in).
 
 ### Key capabilities
 
@@ -17,13 +17,12 @@ AKSH is a **423,000-line production trading platform** built solo, handling live
 | **Backtesting (Symphony)** | Walk-forward backtester with vectorized execution and realistic slippage modelling |
 | **Live execution** | Order routing via Zerodha Kite API with position sizing and risk controls |
 | **Monitoring dashboard** | React + FastAPI real-time P&L, position, and signal dashboard |
-| **Data warehouse** | PostgreSQL store with 5+ years of tick + OHLCV data |
+| **Data warehouse** | PostgreSQL store of NSE tick + OHLCV data |
 
 ### Stats
-- **423,000+ lines** of production Python, TypeScript, and SQL
-- **Live since 2021** — continuous operation, 4+ years
+- **400,000+ lines** (git-tracked) of production Python, TypeScript, and SQL
+- **Running in production** — live algorithmic trading on the NSE, deployed on AWS
 - **Solo-built** — architecture, infrastructure, trading logic, frontend, and ops
-- **Zero external dependencies** on paid data providers (raw NSE feed)
 
 ---
 
@@ -90,8 +89,8 @@ Infra:      Linux VPS · systemd · git · nginx
 
 | Project | Stack | Status |
 |---------|-------|--------|
-| [EarningsIQ](https://treumalgotech.in) | Python · LangChain · EDGAR API · PostgreSQL | Live — 33K+ filings processed |
-| Multi-Agent Lead Gen | Python · Claude API · Pydantic | Live — 80% manual work reduction |
+| EarningsIQ | Python · LLMs · NSE/BSE XBRL · PostgreSQL | Live — 20,000+ filings processed |
+| Multi-Agent Lead Gen (bmad-leadgen) | TypeScript · Claude API · multi-agent | Built — 53K-line multi-agent system |
 | Growth Gap Fund | Next.js · Supabase · TypeScript | Live |
 | Musician's Atelier | Next.js · Supabase | Live |
 

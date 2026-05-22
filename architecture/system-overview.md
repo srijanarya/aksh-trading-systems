@@ -112,9 +112,8 @@ Historical OHLCV (PostgreSQL)
 
 | Metric | Value |
 |--------|-------|
-| Codebase size | 423,000+ lines |
-| Tick throughput | ~2,000-5,000 ticks/sec during peak NSE hours |
+| Codebase size | 400,000+ lines (git-tracked) |
+| Tick ingestion | Real-time WebSocket tick stream during NSE market hours |
 | Strategies in production | Multiple (configuration-driven) |
-| Data history | 5+ years of NSE tick data |
-| Latency (signal to order) | <200ms (Python + async, not HFT) |
-| Uptime | Daily (market hours) — automated start/stop via systemd |
+| Execution model | Async (asyncio) — not HFT-latency-class |
+| Uptime | Runs daily during market hours — cron-scheduled, production on AWS |
