@@ -21,7 +21,7 @@ AKSH is a **400,000+ line production trading platform** built solo, handling liv
 
 ### Stats
 - **400,000+ lines** (git-tracked) of production Python, TypeScript, and SQL
-- **Running in production** — live algorithmic trading on the NSE, deployed on AWS
+- **Running in production since 2023** — live algorithmic trading on the NSE, deployed on AWS
 - **Solo-built** — architecture, infrastructure, trading logic, frontend, and ops
 
 ---
